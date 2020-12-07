@@ -13,7 +13,7 @@ type user struct {
 
 
 
-func queryMultiRow() {
+func queryMultiRow() { //多行查询
 
 	db,err := sql.Open("mysql","root:1997@(localhost:3306)/test?charset=utf8")
 	if err != nil {
@@ -33,7 +33,7 @@ func queryMultiRow() {
 	
 }
 
-func queryAll() {
+func queryAll() {//全查询
 
 	db,err := sql.Open("mysql","root:1997@(localhost:3306)/test?charset=utf8")
 	if err != nil {
@@ -54,7 +54,7 @@ func queryAll() {
 
 }
 
-func insertRow() {
+func insertRow() {//插入
 
 	 db,err := sql.Open("mysql","root:1997@(localhost:3306)/test?charset=utf8")
 	if err != nil {
@@ -78,7 +78,7 @@ func insertRow() {
 	
 }
 
-func updateRow() {
+func updateRow() {//更新
 
 	db,err := sql.Open("mysql","root:1997@(localhost:3306)/test?charset=utf8")
 	if err != nil {
@@ -103,7 +103,7 @@ func updateRow() {
 
 }
 
-func deleteRow() {
+func deleteRow() {//删除
 	db,err := sql.Open("mysql","root:1997@(localhost:3306)/test?charset=utf8")
 	if err != nil {
 		panic(err)
